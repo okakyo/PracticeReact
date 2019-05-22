@@ -3,6 +3,7 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
   res.render('login');
+  console.log(req.session)
 });
 
 router.post('/', function(req, res, next) {
