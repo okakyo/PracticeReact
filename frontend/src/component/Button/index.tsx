@@ -1,2 +1,11 @@
-import {Component} from 'react'
-import {Button} from '@material-ui/core';
+import * as React from 'react';
+
+interface Props{
+    label:string;
+    onClick:()=>void;
+}
+
+const Button =(props:Props)=>{
+    <button onClick={props.onClick}>{props.label}</button>
+}
+export default Button;
