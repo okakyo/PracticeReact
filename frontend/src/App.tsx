@@ -5,11 +5,13 @@ import {BrowserRouter as Router,Link,Route} from 'react-router-dom';
 
 //@types/react-router-dom を追加
 
+
 const Navbar=()=>{
   <Router>
     <div>
-      <Route exact path="/" />
-      
+      <Route exact path="/" Component={App}/>
+      <Route path="/chat"></Route>
+      <Route path="/info"></Route>
     </div>
   </Router>
 }
