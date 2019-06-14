@@ -1,11 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter as Router,Link,Route} from 'react-router-dom';
-
-//@types/react-router-dom を追加
-
-
 
 const App: React.FC = () => {
   return (
