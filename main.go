@@ -15,6 +15,6 @@ func main()  {
         ctx.HTML(200, "index.html", gin.H{})
     })
 
-    router.Run(":5200");
     fmt.Println("Running at http://localhost:5200")
+    router.Run(":5200");
 }
