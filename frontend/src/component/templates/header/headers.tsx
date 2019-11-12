@@ -11,9 +11,9 @@ class Headers extends React.Component{
         super(props);
     }
 
-
     render(){
-        return {}
+        return (
+            <div></div>
+        )
     }
-
 };
