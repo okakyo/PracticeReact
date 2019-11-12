@@ -9,6 +9,7 @@
 - カード下にNopeボタン、Likeボタンを表示
 - Nopeボタンをタップしたときはカードが左に流れるアニメーションが実行され、次のカードが表示される
 - Likeボタンをタップしたときはカードが右に流れるアニメーションが実行され、次のカードが表示される
+
 (Advanced)
 - スワイプでカードを仕分けできる
 - カードの下部をタップすると詳細画面を表示できる
@@ -25,8 +26,11 @@
   - 場合に応じてAPI.BFF を用意しておくこと
 - 場合分けの保持：
   - Firebase を利用してAPI を用意したほうがいい(もしできれば)
-  - Redux を利用して場合分けすること
+  - ~~Redux を利用すること~~  
+    → Redux の代わりにReact Hooks を用いたほうがいい
   - その際のAPIの　DB設計図を下に示す
+
+- Docker を利用しての開発環境はいまは不要
 
 ## DB の要件定義
   name|type| description
@@ -35,6 +39,6 @@
   name|string(100)| necessary 
   age | int | necessary 
   imgURL |string| necessary 
+  introduction |Text| max_length: 400 words
   liked |array[int]| account_id  (many-to-many)
-
 
